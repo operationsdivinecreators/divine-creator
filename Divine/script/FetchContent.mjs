@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 
 const API_URL = "http://localhost:1337";
+const API_URL = "https://deserving-cuddle-3e65d0bf82.strapiapp.com"
 
 const outputDir = path.resolve("public/data");
 
