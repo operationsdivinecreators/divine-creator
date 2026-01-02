@@ -1,0 +1,56 @@
+{
+  "data": [
+    {
+      "id": 6,
+      "documentId": "nofefxmdhxs8uj9mqfo1yf9m",
+      "name": "Commercial",
+      "slug": "category",
+      "description": null,
+      "createdAt": "2026-01-02T08:53:31.179Z",
+      "updatedAt": "2026-01-02T08:53:31.179Z",
+      "publishedAt": "2026-01-02T08:53:31.174Z",
+      "portfolios": [
+        {
+          "id": 4,
+          "documentId": "dncr5xorbl3hshoypmnrziat",
+          "title": "Living & Dining Interior Design",
+          "slug": "living-and-dining-interior-design",
+          "description": "saffafasfasf",
+          "createdAt": "2026-01-02T08:55:39.733Z",
+          "updatedAt": "2026-01-02T08:55:39.733Z",
+          "publishedAt": "2026-01-02T08:55:39.740Z"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "documentId": "fmr2id8ujamhvau311k8tzpc",
+      "name": "Bedroom",
+      "slug": "category-1",
+      "description": null,
+      "createdAt": "2026-01-02T08:53:56.892Z",
+      "updatedAt": "2026-01-02T08:53:56.892Z",
+      "publishedAt": "2026-01-02T08:53:56.889Z",
+      "portfolios": [
+        {
+          "id": 2,
+          "documentId": "r035pb0swl1d35ypmm368rdy",
+          "title": "Bedroom Interior Design",
+          "slug": null,
+          "description": "sanfkhabfhabfiahbfhabfajhfajhfajhf ",
+          "createdAt": "2026-01-02T08:54:54.839Z",
+          "updatedAt": "2026-01-02T08:54:54.839Z",
+          "publishedAt": "2026-01-02T08:54:54.850Z"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 2
+    }
+  }
+}
