@@ -1,4 +1,5 @@
 import ReviewCarousel from "../../../utils/reviewCarousel/reviewCarousel";
+import YoutubeCarousel from "../../../utils/youtubeCarousel/youtubeCarousel";
 
 
 export default function TestimonialSection() {
@@ -12,6 +13,9 @@ export default function TestimonialSection() {
             </div>
             <div>
                 <ReviewCarousel/>
+            </div>
+            <div>
+                <YoutubeCarousel/>
             </div>
         </section>
     </>
