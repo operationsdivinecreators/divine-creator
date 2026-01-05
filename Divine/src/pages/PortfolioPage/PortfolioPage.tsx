@@ -5,7 +5,7 @@ export default function PortfolioPage() {
 
     return <>
 
-        <Layout title="Portfolio">
+        <Layout title="Portfolio | Interior Designs in Trivandrum | Best Interior Design">
             <section>
 
                 <div className="relative w-full">

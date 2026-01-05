@@ -10,7 +10,7 @@ import Layout from "../../utils/layout/layout";
 const HomePage = () => {
 
     return <>
-        <Layout title="Homepage">
+        <Layout title="Home | Interior Designs in Trivandrum | Best Interior Design">
             <div className="container mx-auto px-4 pt-32">
                 <Bulb />
                 <HeroSection />

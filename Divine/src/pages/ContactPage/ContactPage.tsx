@@ -4,7 +4,7 @@ import Layout from "../../utils/layout/layout";
 
 export default function ContactPage() {
     return <>
-        <Layout title="Contactpage">
+        <Layout title="Contact Us | Interior Designs in Trivandrum | Best Interior Design">
             <section>
 
                 <div className="relative w-full">
