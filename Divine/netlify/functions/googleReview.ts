@@ -13,7 +13,7 @@ export async function handler() {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
-      body: JSON.stringify({data}),
+      body: JSON.stringify({ data }),
     };
   } catch (error) {
     return {

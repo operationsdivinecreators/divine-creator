@@ -1,4 +1,73 @@
+import { useState } from "react";
+
+
+
 export default function ContactForm() {
+  const [loading, setLoading] = useState(false);
+  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
+  const uploadPreset = import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET;
+
+
+
+  const uploadImage = async (file: File): Promise<string> => {
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append(
+      "upload_preset",
+      uploadPreset || ""
+    );
+
+    const res = await fetch(
+      `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`,
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    const data = await res.json();
+    return data.secure_url;
+  };
+
+
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const form = e.currentTarget;
+    let uploadedImageUrl = "";
+
+    const imageFile = form.img?.files?.[0];
+    if (imageFile) {
+      uploadedImageUrl = await uploadImage(imageFile);
+    }
+
+    const formData = new FormData();
+    formData.append("firstname", form.firstname.value);
+    formData.append("lastname", form.lastname.value);
+    formData.append("email", form.email.value);
+    formData.append("mobile", form.mobile.value);
+    formData.append("plan", form.plan.value);
+    formData.append("message", form.message.value);
+    formData.append("image_url", uploadedImageUrl);
+
+    console.log([...formData.entries()]);
+
+    await fetch(
+      "https://formsubmit.co/5e7c9b751b4f1e4be51d78f2dced928e",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    setLoading(false);
+    alert("Form submitted successfully");
+    form.reset();
+  };
+
   return (
     <section className="py-20 px-4">
       {/* Heading */}
@@ -20,7 +89,7 @@ export default function ContactForm() {
         </div>
 
         {/* Form */}
-        <form className="w-full space-y-6" action="https://formsubmit.co/5e7c9b751b4f1e4be51d78f2dced928e" method="POST">
+        <form className="w-full space-y-6" onSubmit={handleSubmit}>
           {/* Row 1 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <input
@@ -28,12 +97,14 @@ export default function ContactForm() {
               type="text"
               placeholder="First Name"
               className="input-field"
+              required
             />
             <input
               name="lastname"
               type="text"
               placeholder="Last Name"
               className="input-field"
+              required
             />
           </div>
 
@@ -44,26 +115,32 @@ export default function ContactForm() {
               type="email"
               placeholder="Email"
               className="input-field"
+              required
             />
             <input
               name="mobile"
               type="tel"
               placeholder="Mobile Number"
               className="input-field"
+              required
             />
           </div>
-          <select name="plan" id="" className="input-field">
-            <option value="" selected disabled>Drop your plan</option>
-            <option value="">Bedroom Interior Design</option>
-            <option value="">Living Interior Design</option>
-            <option value="">Dining Interior Design</option>
-            <option value="">Kitchen Interior Design</option>
-            <option value="">Bathroom Interior Design</option>
-            <option value="">Shop Interior Design</option>
-            <option value="">Prayer room Interior Design</option>
-            <option value="">Showcase Interior Design</option>
-            <option value="">Others</option>
+          <select name="plan" defaultValue="" className="input-field">
+            <option value="" disabled>Drop your plan</option>
+            <option value="Bedroom">Bedroom Interior Design</option>
+            <option value="Living">Living Interior Design</option>
+            <option value="Dining">Dining Interior Design</option>
+            <option value="Kitchen">Kitchen Interior Design</option>
+            <option value="Bathroom">Bathroom Interior Design</option>
+            <option value="Shop">Shop Interior Design</option>
+            <option value="Prayer">Prayer room Interior Design</option>
+            <option value="Showcase">Showcase Interior Design</option>
+            <option value="Others">Others</option>
           </select>
+
+
+
+          <input type="file" alt="" name="img" className="input-field bg-white" />
 
           {/* Message */}
           <textarea
@@ -71,14 +148,16 @@ export default function ContactForm() {
             placeholder="Message"
             rows={5}
             className="input-field resize-none"
+            required
           />
 
           {/* Button */}
           <button
             type="submit"
             className="btn-primary px-8 py-3 rounded-xl font-semibold"
+            disabled={loading}
           >
-            Send Now
+            {loading ? 'Sending...' : 'Send Now'}
           </button>
         </form>
       </div>
