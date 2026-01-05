@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const STRAPI_URL = "http://localhost:1337";
+// const STRAPI_URL = "http://localhost:1337";
+const STRAPI_URL = "https://holy-treasure-8c0c4034cd.strapiapp.com"
+
 
 export const getBlogs = async () => {
   try {
