@@ -30,7 +30,7 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-8 text-lg text-white">
           <li>
             <a
-              className="hover:text-amber-300 transition cursor-pointer" href="/"
+              className="hover:bg-amber-300 rounded p-2 hover:text-black transition cursor-pointer" href="/"
             >
               Home
             </a>
@@ -38,26 +38,26 @@ export default function Navbar() {
 
           <li>
             <a
-              className="hover:text-amber-300 transition cursor-pointer" href="/#process"
+              className="hover:bg-amber-300 rounded p-2 hover:text-black  transition cursor-pointer" href="/#process"
             >
               Our Process
             </a>
           </li>
 
           <li> <a
-            className="hover:text-amber-300 transition cursor-pointer" href="/#testimonial"
+            className="hover:bg-amber-300 rounded p-2 hover:text-black  transition cursor-pointer" href="/#testimonial"
           >
             Testimonials
           </a></li>
 
           <li><Link
-            className="hover:text-amber-300 transition cursor-pointer" to="/portfolio"
+            className="hover:bg-amber-300 rounded p-2 hover:text-black transition cursor-pointer" to="/portfolio"
           >
             Portfolio
           </Link></li>
 
           <li><Link
-            className="hover:text-amber-300 transition cursor-pointer" to="/contact"
+            className="hover:bg-amber-300 rounded p-2 hover:text-black transition cursor-pointer" to="/contact"
           >
             Contact Us
           </Link></li>

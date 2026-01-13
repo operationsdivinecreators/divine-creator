@@ -40,6 +40,7 @@ export default function ServiceSection() {
 
 
     return <>
+    
         <section id="services" ref={sectionRef}>
             <h1 className="text-(--secondaryColor) text-4xl md:text-5xl my-30 font-bold text-center">
                 Our Services
@@ -50,7 +51,7 @@ export default function ServiceSection() {
                 <div className="border-2 rounded-2xl overflow-hidden flex flex-col p-5 transition-all duration-300 hover:shadow-[0_0_30px_rgba(196,166,97,0.6)]">
                     <div className='card'>
                         <img
-                            src="https://res.cloudinary.com/dez4snjqf/image/upload/f_auto,q_auto/v1767332616/servicecard1_ujq3wn.png"
+                            src="https://res.cloudinary.com/dez4snjqf/image/upload/v1768298591/Rectangle_76_4_d0ci4t.png"
                             alt="Basic Package"
                             className="w-full aspect-4/3 object-cover rounded-2xl"
                             loading="lazy"
@@ -70,7 +71,7 @@ export default function ServiceSection() {
                 <div className="border-2 rounded-2xl overflow-hidden flex flex-col p-5 transition-all duration-300 hover:shadow-[0_0_30px_rgba(196,166,97,0.6)]">
                     <div className="card">
                         <img
-                            src="https://res.cloudinary.com/dez4snjqf/image/upload/f_auto,q_auto/v1767332616/servicecard2_euonsw.png"
+                            src="https://res.cloudinary.com/dez4snjqf/image/upload/v1768298590/Rectangle_76_5_x7fbyy.png"
                             alt="Standard Package"
                             className="w-full aspect-4/3 object-cover rounded-2xl"
                             loading="lazy"
@@ -86,7 +87,7 @@ export default function ServiceSection() {
                 <div className="border-2 rounded-2xl overflow-hidden flex flex-col p-5 transition-all duration-300 hover:shadow-[0_0_30px_rgba(196,166,97,0.6)]">
                     <div className="card">
                         <img
-                            src="https://res.cloudinary.com/dez4snjqf/image/upload/f_auto,q_auto/v1767332617/servicecard3_ljk5rc.png"
+                            src="https://res.cloudinary.com/dez4snjqf/image/upload/v1768298590/Rectangle_76_6_t0eibm.png"
                             alt="Premium Package"
                             className="w-full aspect-4/3 object-cover rounded-2xl"
                             loading="lazy"
@@ -100,5 +101,8 @@ export default function ServiceSection() {
             </div>
 
         </section>
+
+        <div className='pattern-bg h-50'>
+        </div>
     </>
 }

@@ -28,14 +28,78 @@
 
 
   background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1242' height='149' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='6.9' stroke-opacity='0.62'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
   color: #FFFFFF;
 }
 
+.pattern-bg {
+  background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='1.6' stroke-opacity='0.84'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.watermark-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.watermark-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url('assets/logo/logo.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 420px;
+
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.process-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.process-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url('assets/logo/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 420px;
+
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+  .process-bg::before{
+     background-image: none !important;
+  }
+
+  .watermark-bg::before {
+     background-image: none !important;
+  }
+}
+
+
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/Inter,wght.woff2') format('woff2');
+  src: url('assets/fonts/Inter,wght.woff2') format('woff2');
   font-display: swap;
+}
+
+.font-shadow{
+  src: url('assets/fonts/ShadowsIntoLight-Regular.ttf');
+  font-display: swap;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 

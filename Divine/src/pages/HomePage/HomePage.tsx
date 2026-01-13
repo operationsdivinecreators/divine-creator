@@ -11,15 +11,30 @@ const HomePage = () => {
 
     return <>
         <Layout title="Home | Interior Designs in Trivandrum | Best Interior Design">
-            <div className="container mx-auto px-4 pt-32">
-                <Bulb />
-                <HeroSection />
-                <AboutSection />
-                <ServiceSection />
+
+            <div className="pattern-bg w-full">
+                <div className="container mx-auto px-4 pt-32">
+                    <Bulb />
+                    <HeroSection />
+                    <AboutSection />
+                    <ServiceSection />
+                </div>
+            </div>
+
+
+            <div className="container mx-auto px-4">
                 <ProcessSection />
+            </div>
+
+            <div className='pattern-bg h-50'>
+            </div>
+            <div className="container mx-auto px-4">
                 <TestimonialSection />
             </div>
+
+
         </Layout>
+
     </>
 }
 export default HomePage;

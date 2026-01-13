@@ -51,42 +51,49 @@ const AboutSection: React.FC = () => {
         <>
 
             <section id="about">
-                <div className="my-32" ref={sectionRef}>
-                    <h1 className="text-(--secondaryColor) text-4xl md:text-5xl mb-12 font-bold text-center md:text-start">
-                        About us
-                    </h1>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 items-center text-center">
-                        <img
-                            src="https://res.cloudinary.com/dez4snjqf/image/upload/f_auto,q_auto/v1767332626/contactimg_u3rf6c.png"
-                            alt="About image 1"
-                            className="aspect-3/4 w-full object-cover rounded-2xl"
-                            ref={imageLeftRef}
-                            loading="lazy"
-                        />
+                <div className="watermark-bg">
 
 
-                        <div
-                            className="aspect-3/4 flex items-center px-4 md:px-0"
-                        >
-                            <p className="text-xl font-bold leading-relaxed">
-                                Welcome to
-                                <span className="text-(--secondaryColor)"> Divine Creators</span>, the
-                                premier interior design studio renowned for the best interior
-                                designing in Trivandrum. We specialize in transforming your vision
-                                into beautifully crafted spaces that reflect your style and
-                                personality.
-                            </p>
-                        </div>
+                    <div className="relative z-10 my-32" ref={sectionRef}>
+                        <h1 className="text-(--secondaryColor) text-4xl md:text-5xl mb-12 font-bold text-center md:text-start">
+                            About us
+                        </h1>
 
-                        <div className="md:translate-y-24">
+
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 items-center text-center">
                             <img
-                                src="https://res.cloudinary.com/dez4snjqf/image/upload/f_auto,q_auto/v1767332616/aboutimg2_pd4hwh.png"
-                                alt="About image 2"
+                                src="https://res.cloudinary.com/dez4snjqf/image/upload/f_auto,q_auto/v1767332626/contactimg_u3rf6c.png"
+                                alt="About image 1"
                                 className="aspect-3/4 w-full object-cover rounded-2xl"
-                                ref={imageRightRef}
+                                ref={imageLeftRef}
                                 loading="lazy"
                             />
+
+
+                            <div
+                                className="aspect-3/4 flex items-center px-4 md:px-0"
+                            >
+                                <p className="text-xl font-extralight tracking-widest leading-10 text-start">
+                                    Welcome to
+                                    <span className="text-(--secondaryColor)"> Divine Creators</span>, the
+                                    premier interior design studio renowned for the best interior
+                                    designing in Trivandrum. We specialize in transforming your vision
+                                    into beautifully crafted spaces that reflect your style and
+                                    personality.
+                                </p>
+                            </div>
+
+                            <div className="md:translate-y-24">
+                                <img
+                                    src="https://res.cloudinary.com/dez4snjqf/image/upload/v1768298590/Rectangle_75_1_xbwxmb.png"
+                                    alt="About image 2"
+                                    className="aspect-3/4 w-full object-cover rounded-2xl"
+                                    ref={imageRightRef}
+                                    loading="lazy"
+                                />
+                            </div>
+
                         </div>
                     </div>
                 </div>

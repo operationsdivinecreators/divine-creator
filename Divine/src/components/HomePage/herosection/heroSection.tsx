@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
                         <span className="text-(--secondaryColor)">Perfection</span>
                     </h1>
 
-                    <h2 className="text-lg md:text-xl">
+                    <h2 className="text-lg md:text-xl font-shadow">
                         “Where Ideas Take Shape”
                     </h2>
 

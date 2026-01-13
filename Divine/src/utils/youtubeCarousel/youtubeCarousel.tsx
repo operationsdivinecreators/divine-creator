@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, FreeMode, Navigation } from 'swiper/modules';
+import { Autoplay, FreeMode } from 'swiper/modules';
 
 
 export default function YoutubeCarousel() {
@@ -11,22 +11,25 @@ export default function YoutubeCarousel() {
         <Swiper
             spaceBetween={30}
             freeMode={false}
-            navigation
             loop={true}
             speed={6000}
             autoplay={{
                 delay: 2500,
-                disableOnInteraction: false
+                disableOnInteraction: true
             }}
-            modules={[FreeMode, Navigation, Autoplay]}
+            modules={[FreeMode, Autoplay]}
             className="mySwiper my-20 review-swiper"
-
+            breakpoints={{
+                0: { slidesPerView: 1},
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3,},
+            }}
 
         >
 
 
             <SwiperSlide>
-                <div className="border-2 bg-black border-(--secondaryColor)s rounded-2xl p-4">
+                <div className="border-2 bg-black border-(--secondaryColor) rounded-2xl overflow-hidden flex flex-col p-5 transition-all duration-300 hover:shadow-[0_0_30px_rgba(196,166,97,0.6)]">
                     <div className="aspect-video w-full">
                         <iframe
                             className="w-full h-full rounded-xl"
@@ -36,8 +39,8 @@ export default function YoutubeCarousel() {
                     </div>
                 </div>
             </SwiperSlide>
-                 <SwiperSlide>
-                <div className="border-2 bg-black border-(--secondaryColor)s rounded-2xl p-4">
+            <SwiperSlide>
+                <div className="border-2 bg-black border-(--secondaryColor) rounded-2xl overflow-hidden flex flex-col p-5 transition-all duration-300 hover:shadow-[0_0_30px_rgba(196,166,97,0.6)]">
                     <div className="aspect-video w-full">
                         <iframe
                             className="w-full h-full rounded-xl"
