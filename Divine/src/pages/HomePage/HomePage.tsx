@@ -26,7 +26,7 @@ const HomePage = () => {
                 <ProcessSection />
             </div>
 
-            <div className='pattern-bg h-50'>
+            <div className='pattern-bg h-20'>
             </div>
             <div className="container mx-auto px-4">
                 <TestimonialSection />

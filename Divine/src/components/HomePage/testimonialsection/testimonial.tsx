@@ -8,7 +8,7 @@ export default function TestimonialSection() {
 
     return <>
         <section id="testimonial">
-            <div className="text-center mb-30 mt-10">
+            <div className="text-center md:mb-30">
                 <h1 className="font-bold text-4xl md:text-5xl text-(--secondaryColor)">Testimonials</h1>
             </div>
             <div>

@@ -48,9 +48,11 @@ export default function PortfolioCarousel({ images }: PortfolioCarouselProps) {
             <img
               src={src}
               alt={`Thumb ${index}`}
-              className="px-5 cursor-pointer rounded-lg opacity-70 hover:opacity-100 max-h-20" loading="lazy"
+              loading="lazy"
+              className=" cursor-pointer rounded-lg opacity-70 hover:opacity-100 h-20 w-full object-cover"
             />
           </SwiperSlide>
+
         ))}
       </Swiper>
     </>

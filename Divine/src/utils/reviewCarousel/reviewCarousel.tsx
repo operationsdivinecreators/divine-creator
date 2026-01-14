@@ -49,7 +49,7 @@ export default function ReviewCarousel() {
             -translate-y-80
             z-
             pointer-events-none
-            w-28 md:w-36 lg:w-44 h-88"
+            w-20 md:w-36 lg:w-44 h-70"
             />
 
             <Swiper

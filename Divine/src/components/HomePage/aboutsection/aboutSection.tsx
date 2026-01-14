@@ -54,7 +54,7 @@ const AboutSection: React.FC = () => {
                 <div className="watermark-bg">
 
 
-                    <div className="relative z-10 my-32" ref={sectionRef}>
+                    <div className="relative z-10 md:mt-32 mt-10" ref={sectionRef}>
                         <h1 className="text-(--secondaryColor) text-4xl md:text-5xl mb-12 font-bold text-center md:text-start">
                             About us
                         </h1>

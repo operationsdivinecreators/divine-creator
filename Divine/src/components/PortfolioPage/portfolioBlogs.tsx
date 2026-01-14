@@ -80,8 +80,7 @@ export default function PortfolioBlogs() {
                             <li key={cat.id}>
                                 <button
                                     onClick={() => setActiveCategory(cat.slug)}
-                                    className={`px-4 py-2 text-sm font-medium border-b-2 my-1.5 transition cursor-pointer
-                  ${activeCategory === cat.slug
+                                    className={`px-4 py-2 text-sm font-medium border-b-2 my-1.5 transition cursor-pointer ${activeCategory === cat.slug
                                             ? "border-(--secondaryColor) text-secondary font-bold"
                                             : "border-transparent text-white hover:text-secondary"
                                         }
