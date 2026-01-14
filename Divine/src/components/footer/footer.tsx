@@ -55,7 +55,7 @@ export default function Footer() {
 
 
     return <>
-        <section className="bg-black p-10">
+        <section className="bg-black px-8">
             <div className="flex flex-col gap-10 justify-evenly md:flex-row">
                 <div className="">
                     <img src={logo} alt="logo" width="100" height="100" />

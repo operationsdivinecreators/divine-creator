@@ -44,7 +44,7 @@ export default function AnimatedCount() {
     return (
         <section
             ref={sectionRef}
-            className="flex flex-col md:flex-row text-center gap-20 justify-between my-40"
+            className="flex flex-col md:flex-row text-center gap-20 justify-evenly my-40"
         >
             <div className="flex flex-col">
                 <h1

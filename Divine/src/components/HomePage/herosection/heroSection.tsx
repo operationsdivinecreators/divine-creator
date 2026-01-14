@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
     }, []);
 
     return (
-        <section className="container mx-auto px-4" id="home">
+        <section className="container" id="home">
             <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
 
                 <div className="flex gap-4">
@@ -56,7 +56,7 @@ const HeroSection: React.FC = () => {
 
                 <div className=" max-w-md flex justify-center">
                     <div
-                        className="w-full max-w-[320px] md:max-w-none object-contain will-change-transform"
+                        className="w-full max-w-2xl aspect-3/4 rounded-2xl md:max-w-none will-change-transform"
                     >
                     <HeroCarousel/>
                     </div>

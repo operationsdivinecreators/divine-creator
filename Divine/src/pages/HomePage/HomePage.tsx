@@ -13,7 +13,7 @@ const HomePage = () => {
         <Layout title="Home | Interior Designs in Trivandrum | Best Interior Design">
 
             <div className="pattern-bg w-full">
-                <div className="container mx-auto px-4 pt-32">
+                <div className="container mx-auto px-4 md:px-30 pt-32">
                     <Bulb />
                     <HeroSection />
                     <AboutSection />
@@ -22,13 +22,13 @@ const HomePage = () => {
             </div>
 
 
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto">
                 <ProcessSection />
             </div>
 
             <div className='pattern-bg h-20'>
             </div>
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 md:px-30">
                 <TestimonialSection />
             </div>
 

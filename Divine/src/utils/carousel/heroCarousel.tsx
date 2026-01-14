@@ -20,8 +20,8 @@ const HeroCarousel: React.FC = () => {
           <img
             src="https://res.cloudinary.com/dez4snjqf/image/upload/f_auto,q_auto/v1767332626/heroImg_n0zg4n.png"
             alt={`Slide ${i + 1}`}
-            className="w-full h-full object-cover"
-            loading="lazy"
+            className="w-full h-full object-cover rounded-2xl"
+            loading="eager"
           />
         </SwiperSlide>
       ))}

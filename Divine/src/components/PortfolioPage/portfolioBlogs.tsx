@@ -56,7 +56,7 @@ export default function PortfolioBlogs() {
 
     return (
         <>
-            <section className={`  md:mb-30 transition-all duration-300 ${openBlog
+            <section className={`md:px-30 px-2  md:mb-30 transition-all duration-300 ${openBlog
                 ? "blur-sm opacity-50 pointer-events-none"
                 : "blur-0 opacity-100"
                 }`}>
@@ -94,7 +94,7 @@ export default function PortfolioBlogs() {
                 </div>
 
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 m-10 my-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 m-3 my-10">
                     {filteredPortfolio.map((blog) => (
                         <div
                             key={blog.id}

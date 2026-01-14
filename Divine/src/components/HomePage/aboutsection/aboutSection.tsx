@@ -84,15 +84,17 @@ const AboutSection: React.FC = () => {
                                 </p>
                             </div>
 
-                            <div className="md:translate-y-24">
+                            <div className="w-full aspect-3/4 md:translate-y-24">
                                 <img
                                     src="https://res.cloudinary.com/dez4snjqf/image/upload/v1768298590/Rectangle_75_1_xbwxmb.png"
                                     alt="About image 2"
-                                    className="aspect-3/4 w-full object-cover rounded-2xl"
+                                    className="w-full h-full object-contain rounded-2xl bg-black"
                                     ref={imageRightRef}
                                     loading="lazy"
                                 />
                             </div>
+
+
 
                         </div>
                     </div>
