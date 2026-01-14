@@ -18,14 +18,14 @@ export default function PortfolioCarousel({ images }: PortfolioCarouselProps) {
         navigation
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2"
+        className="mySwiper2 small-nav"
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
             <img
               src={src}
               alt={`Slide ${index}`}
-              className="w-full h-96 rounded-xl px-5"
+              className="w-full h-96 rounded-xl px-5 object-contain"
               loading="lazy"
             />
           </SwiperSlide>

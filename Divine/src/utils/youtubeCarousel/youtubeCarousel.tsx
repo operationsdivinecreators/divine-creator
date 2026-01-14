@@ -12,11 +12,6 @@ export default function YoutubeCarousel() {
             spaceBetween={30}
             freeMode={false}
             loop={true}
-            speed={6000}
-            autoplay={{
-                delay: 2500,
-                disableOnInteraction: true
-            }}
             modules={[FreeMode, Autoplay]}
             className="mySwiper my-20 review-swiper"
             breakpoints={{

@@ -64,7 +64,7 @@ export default function ReviewCarousel() {
                 modules={[FreeMode, Autoplay]}
                 className="mySwiper my-20 review-swiper z-30"
                 breakpoints={{
-                    0: { slidesPerView: 1, loop: review.length > 1 },
+                    0: { slidesPerView: 1, loop: review.length > 1 ,autoplay:false },
                     768: { slidesPerView: 2, loop: review.length > 2 },
                     1024: { slidesPerView: 3, loop: review.length > 3 },
                 }}

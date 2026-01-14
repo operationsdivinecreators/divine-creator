@@ -56,7 +56,7 @@ export default function PortfolioBlogs() {
 
     return (
         <>
-            <section className={` my-30 transition-all duration-300 ${openBlog
+            <section className={`  md:mb-30 transition-all duration-300 ${openBlog
                 ? "blur-sm opacity-50 pointer-events-none"
                 : "blur-0 opacity-100"
                 }`}>

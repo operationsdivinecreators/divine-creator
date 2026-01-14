@@ -128,3 +128,16 @@ html {
 .review-swiper .swiper-button-prev {
   @apply hidden md:flex;
 }
+
+.small-nav .swiper-button-next::after,
+.small-nav .swiper-button-prev::after {
+  font-size: 18px;   /* default is ~44px */
+}
+
+/* Reduce button container size */
+.small-nav .swiper-button-next,
+.small-nav .swiper-button-prev {
+  width: 20px;
+  height: 20px;
+  color: #EBC34E;
+}

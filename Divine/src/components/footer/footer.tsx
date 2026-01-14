@@ -114,7 +114,7 @@ export default function Footer() {
                 </div>
             </div>
             <hr className='text-neutral-400 mt-5 md:mt-0' />
-            <div className='text-center font-extralight text-neutral-400 text-sm mt-2'>Crafted with ❤️ Cloud Forest Innovations</div>
+            <div className='text-center font-extralight text-neutral-400 text-sm mt-2'>Crafted with ❤️ <a href="https://cloudforest.info/" target='_blank'> Cloud Forest Innovations</a></div>
         </section>
 
 
