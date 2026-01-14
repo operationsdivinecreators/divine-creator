@@ -4,10 +4,11 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export default function FindOffice() {
 
-    return <> <GoogleMaps />
+    return <> 
+    <GoogleMaps />
         <div className="justify-items-center my-20">
-            <h1 className="text-(--secondaryColor) text-3xl md:text-5xl font-bold">TRUST AND RECOMMEND</h1>
-            <h2 className="text-3xl md:text-4xl font-bold">Contact Us</h2>
+            <h1 className="text-(--secondaryColor) text-3xl md:text-5xl font-bold text-center">TRUST AND RECOMMEND</h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-center">Contact Us</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-6 lg:gap-10 mx-10">
 
