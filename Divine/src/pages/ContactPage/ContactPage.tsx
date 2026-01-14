@@ -15,7 +15,7 @@ export default function ContactPage() {
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
                         <h1 className="text-white font-bold text-5xl md:text-7xl lg:text-8xl">
-                            About
+                            Contact Us
                         </h1>
 
                         <p className="mt-4 text-gray-200 md:text-5xl text-2xl">

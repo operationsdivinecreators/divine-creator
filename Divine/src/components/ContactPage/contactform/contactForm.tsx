@@ -69,7 +69,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-10">
       {/* Heading */}
       <div className="text-center mb-16">
         <h1 className="text-(--secondaryColor) text-4xl md:text-5xl font-bold">
