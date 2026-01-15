@@ -28,7 +28,7 @@ const HomePage = () => {
 
             <div className='pattern-bg h-20'>
             </div>
-            <div className="container mx-auto px-4 md:px-30">
+            <div className="container mx-auto px-4 md:px-20">
                 <TestimonialSection />
             </div>
 
